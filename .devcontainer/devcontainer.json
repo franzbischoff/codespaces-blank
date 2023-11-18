@@ -13,6 +13,9 @@
       "installTools": true,
       "version": "3.11" // PEP 664 - https://www.python.org/dev/peps/pep-0664/
     },
-    "ghcr.io/devcontainers-contrib/features/tailscale:1": {}
-  }
+    "ghcr.io/tailscale/codespace/tailscale": {}
+  },
+  "runArgs": [
+    "--device=/dev/net/tun"
+  ]
 }
